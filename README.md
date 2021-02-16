@@ -1,7 +1,7 @@
 # Cregs-List
 
 ## Project Description
-Cregs-List is an Airtable and React build where the user is able to submit a profile of themselves or a Creg they know. From the homepage, the user is able to navigate to and click on an the profile image that leads to a corresponding page of their complete biography. The user can also create and delete profiles of Creg's on the app with a form sumbit. 
+Cregs-List is an Airtable and React build where the user is able to submit a profile of themselves or a Creg they know. From the homepage, the user is able to navigate to and click on an the profile image that leads to a corresponding page of their complete biography. The user can also create and delete profiles of Creg's on the app with a submitting a form. We accept all types of Cregs here, regardless of spelling. :) 
 
 
 ## Wireframes
