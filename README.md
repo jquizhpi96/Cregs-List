@@ -40,6 +40,7 @@ The wireframes displays first the homepage where the user will see a photo galle
 
 
 #### PostMVP  
+- edit/delete button option for the user
 - experiment of CSS styling to create animations effects when the user hovers on the image
 - have the social media logos displayed in the bio page with the link to their social media handle embeded. 
 
