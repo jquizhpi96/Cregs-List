@@ -36,7 +36,7 @@ The wireframes displays first the homepage where the user will see a photo galle
 - Have the user be able to click on the image linking them to their profile page
 - Have a nav bar to navigate the user back to the main page when clicked 
 - include a form submit on the nav bar for the user if they want to submit a profile
-- Delete posts from the feed and airtable.
+
 
 
 #### PostMVP  
@@ -77,7 +77,7 @@ This schedule will be used to keep track of your progress throughout the week an
 
 ## SWOT Analysis
 
-### Strengths: I have a good understanding of what iI want my project to look like and I am coonfident in being able to render the date onto my app in react.  I also have a good amount of excercises I can reference to. 
+### Strengths: I have a good understanding of what I want my project to look like and I am confident in being able to render the data onto my app in react.  I also have a good amount of excercises I can reference to. 
 
 ### Weaknesses: I can get lost in algorithims when creating functions mostly because of the syntax and not undertsanong the purpose of some of them.  I will have to look up the methods and functions online or if that doesnt work I'll go to TA hours for help. I am also not comfortable using CSS flexbox so I'm nervouse about that.
 
