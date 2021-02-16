@@ -72,7 +72,6 @@ This schedule will be used to keep track of your progress throughout the week an
 | Data creation and deletion toggleFetch | H | 3 hrs| hrs | hrs |
 | CSS flexbox | H | 3 hrs| hrs | hrs |
 | CSS advanced styling | H | 4 hrs| hrs | hrs |
-
 | Total | H | 27 hrs| hrs | hrs |
 
 ## SWOT Analysis
