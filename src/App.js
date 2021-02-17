@@ -1,11 +1,9 @@
-import { Route, Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { useEffect, useState } from "react";
-import axios from "axios";
 import Home from "./components/Home";
 import Form from "./components/Form";
 import Nav from "./components/Nav";
 import Bio from "./components/Bio";
-import { baseURL, config } from "./services";
 import "./App.css";
 
 function App() {
@@ -21,10 +19,11 @@ function App() {
       </Route>
       <Route exact path="/">
         <div className="cregs-container">
-
           <Home creg={cregs} />
-
         </div>
+      </Route>
+      <Route path="/bio/:id">
+        <Bio creg={cregs} />
       </Route>
     </div>
   );

@@ -9,7 +9,7 @@ function Form(props) {
   const [age, setAge] = useState("");
   const [location, setLocation] = useState("");
   const [bio, setBio] = useState("");
-  const [socialMedia, setSocialMedia] = useState("");
+  const [socialMediaHandle, setSocialMediaHandle] = useState("");
   const [imageURL, setImageURL] = useState("");
   const history = useHistory();
   const params = useParams();
@@ -23,7 +23,7 @@ function Form(props) {
         setAge(findCreg.fields.age);
         setLocation(findCreg.fields.location);
         setBio(findCreg.fields.bio);
-        setSocialMedia(findCreg.fields.socialmediaHandle);
+        setSocialMediaHandle(findCreg.fields.socialmediaHandle);
         setImageURL(findCreg.fields.imageURL);
       }
     }
@@ -36,7 +36,7 @@ function Form(props) {
       age,
       location,
       bio,
-      socialMedia,
+      socialMediaHandle,
       imageURL,
     };
     console.log(fields);
@@ -77,8 +77,8 @@ function Form(props) {
       <label> Social Media:</label>
       <input
         type="text"
-        value={socialMedia}
-        onChange={(e) => setSocialMedia(e.target.value)}
+        value={socialMediaHandle}
+        onChange={(e) => setSocialMediaHandle(e.target.value)}
       />
       <label> Image URL:</label>
       <input

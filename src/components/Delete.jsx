@@ -9,9 +9,10 @@ function Delete(props) {
     props.setToggleFetch((curr) => !curr);
   };
   return (
+    
     <div className='delete'>
       <button onClick={deleteProfile}>Delete Profile</button>
-      <Link to={`/edit/${props.cregs.id}`}>
+      <Link to={`/edit/}`}>
       <button>Edit</button>
       </Link>
     </div>

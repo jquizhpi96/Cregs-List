@@ -5,10 +5,9 @@ import { baseURL, config } from "../services";
 import { useEffect, useState } from "react";
 
 function Home(props) {
-  
   const [cregs, setCregs] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
-  
+
   useEffect(() => {
     const getCregs = async () => {
       const resp = await axios.get(baseURL, config);
@@ -18,19 +17,16 @@ function Home(props) {
     getCregs();
   }, [toggleFetch]);
 
-
-
   return (
     <div>
-     {cregs.map((creg) => (
-            <Link key={creg.id} to="/:id" > <img
-         src={creg.fields.imageURL}
-       />
-         <h3> {creg.fields.name}</h3></Link>
-        ))}
-     
-      
-  </div>
-)
+      {cregs.map((creg) => (
+        <Link key={creg.id} to={`/bio/${creg.id}`}>
+          
+          <img src={creg.fields.imageURL} />
+          <h3> {creg.fields.name}</h3>
+        </Link>
+      ))}
+    </div>
+  );
 }
-export default Home; 
+export default Home;
