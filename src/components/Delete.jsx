@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { baseURL, config } from "../services";
-import Form from './Form'
+
 
 function Delete(props) {
   const deleteProfile = async () => {
-    const cregURL= `${baseURL}`;
-    await axios.delete(cregURL, config);
+    const url = `${baseURL}/${props.creg.id}`
+    await axios.delete(url, config);
     props.setToggleFetch((curr) => !curr);
   };
 
@@ -14,10 +14,8 @@ function Delete(props) {
     
     <div className='delete'>
       <button onClick={deleteProfile}>Delete Profile</button>
-      <Link to= "/edit/{id}">
-        
-      
-        <button>Edit</button>
+      <Link to={`/edit/${props.creg.id}`}>
+       <button>Edit</button>
         </Link>
     </div>
 

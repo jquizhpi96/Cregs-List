@@ -74,7 +74,7 @@ function Form(props) {
         value={bio}
         onChange={(e) => setBio(e.target.value)}
       />
-      <label> Social Media:</label>
+      <label> Instagram:</label>
       <input
         type="text"
         value={socialMediaHandle}
