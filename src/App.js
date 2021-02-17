@@ -23,7 +23,7 @@ function App() {
         </div>
       </Route>
       <Route path="/bio/:id">
-        <Bio creg={cregs} />
+        <Bio cregs={cregs} />
       </Route>
     </div>
   );

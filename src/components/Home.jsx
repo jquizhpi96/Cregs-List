@@ -25,7 +25,9 @@ function Home(props) {
           <img src={creg.fields.imageURL} />
           <h3> {creg.fields.name}</h3>
         </Link>
+         
       ))}
+     
     </div>
   );
 }
