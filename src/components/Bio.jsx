@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import { baseURL, config } from "../services";
 import { useParams } from 'react-router-dom'
 
-import axios from 'axios'
 
+import axios from 'axios'
 
 function Bio(props) {
   const [cregs, setCregs] = useState([]);
@@ -24,14 +24,15 @@ useEffect(() => {
  
 //match params id with prop id to get data
   
-
-    return (
-      <div>
-        <h2>{cregs.name}</h2>
-      
-      </div>
   
-    )
+  return (
+    <div>
+      <h2></h2>
+      
+    </div>
+  
+  );
+  
   }
 
 
