@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <div className= "Footer">
-      <h6>Jason Quizhpi </h6>
+      <h5>Jason Quizhpi </h5>
     </div>
   )
 }

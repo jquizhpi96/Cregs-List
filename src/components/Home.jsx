@@ -19,7 +19,6 @@ function Home(props) {
 
   return (
     <div className="Container">
-       
       {cregs.map((creg) => (
         <Link key={creg.id} to={`/bio/${creg.id}`}>
           
