@@ -1,15 +1,22 @@
 .image {
   width: 250px;
   padding: 5px;
+  border-style: dashed;
+  border-color: #7c7c7c;
 }
 
 .Container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  margin: 30px, 10px, 0px, 10px;
+  margin-top: 50px;
 }
 
 .name {
   text-align: center;
+  color: #d64933;
+}
+
+a:link {
+  text-decoration: none;
 }

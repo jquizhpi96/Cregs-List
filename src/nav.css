@@ -1,12 +1,12 @@
 .header {
-  color: #e4d9ff;
+  color: #d64933;
   margin: 0;
   font-size: 34px;
 }
 .Nav {
   margin-bottom: 10px;
   display: inline-block;
-  background-color: #273469;
+  background-color: #2b303a;
   justify-content: space-between;
   padding: 1rem;
   display: flex;
@@ -16,5 +16,5 @@
   text-decoration: none;
   font-size: 20px;
   justify-content: space-between;
-  color: #e4d9ff;
+  color: #d64933;
 }

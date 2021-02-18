@@ -1,14 +1,7 @@
 .App {
-  background-color: #e4d9ff;
-}
-
-h1 {
-  font-size: 50px;
-  margin: 0;
-  padding: 10px;
-  color: #273469;
+  background-color: #eee5e9;
 }
 
 .cregs-container {
-  margin: 30px, 10px, 0px, 10px;
+  margin: 40px, 10px, 0px, 10px;
 }

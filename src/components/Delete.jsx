@@ -7,7 +7,7 @@ function Delete(props) {
   const history = useHistory();
 
   const deleteProfile = async () => {
-    const url = `${baseURL}/bio/${props.creg.id}`
+    const url = `${baseURL}/${props.creg.id}`
     await axios.delete(url, config);
     props.setToggleFetch((curr) => !curr);
     history.push("/");
@@ -18,7 +18,7 @@ function Delete(props) {
     
     <div className='delete'>
       
-        <button onClick={deleteProfile}>Delete this Creg if you think he's not a Creg, Kreg, or some other way of spelling Creg!</button>
+        <button onClick={deleteProfile}>Delete this Creg</button>
      
       
     </div>

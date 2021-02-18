@@ -4,7 +4,7 @@ import { baseURL, config } from "../services";
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 
-function Bio() {
+function Bio(props) {
   const [creg, setCreg] = useState("");
   const params = useParams()
   
@@ -21,28 +21,26 @@ useEffect(() => {
     getCregs();
   }, []);
   
- //conditional to make sure u have object in state.
   if (!creg) {
     return <h4>loading....</h4>
   }
-  
  
-  
- 
-//match params id with prop id to get data
-  
-  
   return (
-    <div className="bio">
-      <h2>{creg.fields.name}</h2>
-      <h4>{creg.fields.age}</h4>
-      <h4>{creg.fields.location}</h4>
-      <h3>{creg.fields.bio}</h3>
-      <a href={creg.fields.socialMediaHandle}>
-        <h5>Instagram</h5>
-        </a>
+    <div className="container" >
       <img className="img"src={creg.fields.imageURL} />
-      <Delete/>
+      
+      <h2 className="name">{creg.fields.name}</h2>
+      <h4 className="age">Age: {creg.fields.age}</h4>
+      <h4 className="location">Location: {creg.fields.location}</h4>
+      <h3 className="bio">{creg.fields.bio}</h3>
+      <a className="insta"href={creg.fields.socialMediaHandle}>
+        {/* <h5>Instagram</h5> */}
+        <img src="Untitled-1.jpeg" alt="instagram"/>
+        </a>
+        <Delete className="delete" creg={creg} setToggleFetch={props.setToggleFetch}/>
+    
+      
+     
       
     </div>
   

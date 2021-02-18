@@ -6,6 +6,7 @@ import Nav from "./components/Nav";
 import Bio from "./components/Bio";
 import Footer from "./components/Footer"
 import "./bio.css"
+import "./Footer.css"
 import './nav.css';
 import "./home.css";
 import "./App.css";
@@ -26,7 +27,7 @@ function App() {
         </div>
       </Route>
       <Route path="/bio/:id">
-        <Bio creg={cregs} />
+        <Bio creg={cregs} setToggleFetch={setToggleFetch} />
       </Route>
       <Footer className="Footer" />
     </div>
