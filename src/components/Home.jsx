@@ -22,8 +22,8 @@ function Home(props) {
       {cregs.map((creg) => (
         <Link key={creg.id} to={`/bio/${creg.id}`}>
           
-          <img src={creg.fields.imageURL} />
-          <h3> {creg.fields.name}</h3>
+          <img className= "image"src={creg.fields.imageURL} />
+          <h3 className= "name"> {creg.fields.name}</h3>
         </Link>
          
       ))}

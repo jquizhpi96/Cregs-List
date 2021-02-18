@@ -5,6 +5,7 @@ import Form from "./components/Form";
 import Nav from "./components/Nav";
 import Bio from "./components/Bio";
 import Footer from "./components/Footer"
+import "./home.css";
 import "./App.css";
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
       <Route path="/bio/:id">
         <Bio cregs={cregs} />
       </Route>
-      <Footer />
+      <Footer className="Footer" />
     </div>
   );
 }

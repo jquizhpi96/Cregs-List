@@ -15,7 +15,7 @@ function Form(props) {
   const params = useParams();
 
   useEffect(() => {
-    if (props.cregs.length > 0 && params.id) {
+    if (props.creg.length > 0 && params.id) {
       const findCreg = props.cregs.find((creg) => params.id === creg.id);
 
       if (findCreg) {

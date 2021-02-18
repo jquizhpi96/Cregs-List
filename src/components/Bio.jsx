@@ -4,7 +4,7 @@ import { baseURL, config } from "../services";
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
 
-function Bio(props) {
+function Bio() {
   const [creg, setCreg] = useState("");
   const params = useParams()
   
