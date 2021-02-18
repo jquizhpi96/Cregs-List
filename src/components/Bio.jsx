@@ -33,7 +33,7 @@ useEffect(() => {
   
   
   return (
-    <div>
+    <div className="bio">
       <h2>{creg.fields.name}</h2>
       <h4>{creg.fields.age}</h4>
       <h4>{creg.fields.location}</h4>
@@ -41,7 +41,7 @@ useEffect(() => {
       <a href={creg.fields.socialMediaHandle}>
         <h5>Instagram</h5>
         </a>
-      <img src={creg.fields.imageURL} />
+      <img className="img"src={creg.fields.imageURL} />
       <Delete/>
       
     </div>

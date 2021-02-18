@@ -1,0 +1,10 @@
+.bio {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  margin: 70px auto 0;
+}
+
+.img {
+  width: 400px;
+}

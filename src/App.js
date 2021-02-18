@@ -5,6 +5,8 @@ import Form from "./components/Form";
 import Nav from "./components/Nav";
 import Bio from "./components/Bio";
 import Footer from "./components/Footer"
+import "./bio.css"
+import './nav.css';
 import "./home.css";
 import "./App.css";
 
@@ -14,12 +16,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Cregs-List</h1>
       <Nav />
       <Route path="/new">
-        <Form cregs={cregs} setToggleFetch={setToggleFetch} />
-      </Route>
-      <Route path="/edit/:id">
         <Form cregs={cregs} setToggleFetch={setToggleFetch} />
       </Route>
       <Route exact path="/">
@@ -28,7 +26,7 @@ function App() {
         </div>
       </Route>
       <Route path="/bio/:id">
-        <Bio cregs={cregs} />
+        <Bio creg={cregs} />
       </Route>
       <Footer className="Footer" />
     </div>

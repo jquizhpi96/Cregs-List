@@ -18,7 +18,8 @@ function Home(props) {
   }, [toggleFetch]);
 
   return (
-    <div>
+    <div className="Container">
+       
       {cregs.map((creg) => (
         <Link key={creg.id} to={`/bio/${creg.id}`}>
           
