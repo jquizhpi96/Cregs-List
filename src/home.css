@@ -4,6 +4,11 @@
   border-style: dashed;
   border-color: #7c7c7c;
   margin-top: 10px;
+  transition: all 0.3s ease 0;
+}
+
+.image:hover {
+  border-color: #92dce5;
 }
 
 .Container {

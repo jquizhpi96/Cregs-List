@@ -36,6 +36,7 @@ useEffect(() => {
       <h4 className="age">Age: {creg.fields.age}</h4>
       <h4 className="location">Location: {creg.fields.location}</h4>
       <h3 className="bio">{creg.fields.bio}</h3>
+      <ul className= "social">
       <a className="social"href={creg.fields.socialMediaHandle}>
         <img className="insta"src={instagram} alt="instagram"/>
       </a>
@@ -45,6 +46,7 @@ useEffect(() => {
       <a className="social"href={creg.fields.twitter}>
         <img className="twitter"src={twitter} alt="instagram"/>
         </a>
+        </ul>
         <Delete className="delete" creg={creg} setToggleFetch={props.setToggleFetch}/>
     
       

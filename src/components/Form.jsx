@@ -48,10 +48,6 @@ function Form(props) {
     console.log(fields);
     
     if (params.id) {
-      const cregURL = `${baseURL}/${params.id}`;
-      await axios.put(cregURL, { fields }, config);
-      
-    } else {
       await axios.post(baseURL, { fields }, config);
     }
     props.setToggleFetch((curr) => !curr);
@@ -65,45 +61,54 @@ function Form(props) {
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
+        required
       />
+      <br/>
       <label>Age:</label>
-      <input type="text" value={age} onChange={(e) => setAge(e.target.value)} />
+      <input type="text" value={age} onChange={(e) => setAge(e.target.value)} required />
+      <br/>
       <label>Location:</label>
       <input
         type="text"
         value={location}
         onChange={(e) => setLocation(e.target.value)}
-      />
+        required />
+       <br/>
       <label> Tell us about yourself:</label>
       <textarea
         type="text"
+        placeholder="Who this?"
         value={bio}
         onChange={(e) => setBio(e.target.value)}
-      />
+        required />
+       <br/>
       <label> Instagram:</label>
       <input
         type="text"
         value={socialMediaHandle}
         onChange={(e) => setSocialMediaHandle(e.target.value)}
       />
-      <label> Facebook</label>
+       <br/>
+      <label> Facebook:</label>
       <input
         type="text"
         value={facebook}
         onChange={(e) => setFacebook(e.target.value)}
       />
+       <br/>
       <label> Twitter:</label>
       <input
         type="text"
         value={twitter}
         onChange={(e) => setTwitter(e.target.value)}
       />
+       <br/>
       <label> Image URL:</label>
       <input
         type="text"
         value={imageURL}
         onChange={(e) => setImageURL(e.target.value)}
-      />
+        required/>
       <button type="submit">Submit Creg</button>
     </form>
   );
