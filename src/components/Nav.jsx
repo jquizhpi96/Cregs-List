@@ -3,10 +3,11 @@ function Nav() {
   
   return (
     <nav className="Nav">
-     <h2 className= "header">Cregs-List</h2>
-      <Link className="Link" to="/">Home</Link>
+      <h2 className="header">Cregs-List</h2>
+    
+      <Link className="Link"  to="/">Home</Link>
       
-      <Link className="Link" to="/new">Insert a Creg here!</Link>
+      <Link className="Linkform"  to="/new">Insert a Creg here!</Link>
     </nav>
   )
 }

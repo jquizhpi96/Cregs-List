@@ -10,6 +10,8 @@ function Form(props) {
   const [location, setLocation] = useState("");
   const [bio, setBio] = useState("");
   const [socialMediaHandle, setSocialMediaHandle] = useState("");
+  const [facebook, setFacebook] = useState("");
+  const [twitter, setTwitter] = useState("");
   const [imageURL, setImageURL] = useState("");
   const history = useHistory();
   const params = useParams();
@@ -24,6 +26,8 @@ function Form(props) {
         setLocation(findCreg.fields.location);
         setBio(findCreg.fields.bio);
         setSocialMediaHandle(findCreg.fields.socialmediaHandle);
+        setFacebook(findCreg.fields.facebook);
+        setTwitter(findCreg.fields.twitter);
         setImageURL(findCreg.fields.imageURL);
       }
     }
@@ -37,6 +41,8 @@ function Form(props) {
       location,
       bio,
       socialMediaHandle,
+      facebook,
+      twitter,
       imageURL,
     };
     console.log(fields);
@@ -53,7 +59,7 @@ function Form(props) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form" onSubmit={handleSubmit}>
       <label>Name:</label>
       <input
         type="text"
@@ -80,13 +86,25 @@ function Form(props) {
         value={socialMediaHandle}
         onChange={(e) => setSocialMediaHandle(e.target.value)}
       />
+      <label> Facebook</label>
+      <input
+        type="text"
+        value={facebook}
+        onChange={(e) => setFacebook(e.target.value)}
+      />
+      <label> Twitter:</label>
+      <input
+        type="text"
+        value={twitter}
+        onChange={(e) => setTwitter(e.target.value)}
+      />
       <label> Image URL:</label>
       <input
         type="text"
         value={imageURL}
         onChange={(e) => setImageURL(e.target.value)}
       />
-      <button type="submit">Submit</button>
+      <button type="submit">Submit Creg</button>
     </form>
   );
 }

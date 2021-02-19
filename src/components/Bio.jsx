@@ -3,7 +3,9 @@ import { useEffect, useState } from "react";
 import { baseURL, config } from "../services";
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
-import photo from '../Untitled-1.jpeg'
+import instagram from '../Untitled-1.jpeg'
+import facebook from '../facebook.png'
+import twitter from '../twitter.png'
 
 function Bio(props) {
   const [creg, setCreg] = useState("");
@@ -35,8 +37,13 @@ useEffect(() => {
       <h4 className="location">Location: {creg.fields.location}</h4>
       <h3 className="bio">{creg.fields.bio}</h3>
       <a className="social"href={creg.fields.socialMediaHandle}>
-        {/* <h5>Instagram</h5> */}
-        <img className="insta"src={photo} alt="instagram"/>
+        <img className="insta"src={instagram} alt="instagram"/>
+      </a>
+      <a className="social"href={creg.fields.facebook}>
+        <img className="facebook"src={facebook} alt="instagram"/>
+      </a>
+      <a className="social"href={creg.fields.twitter}>
+        <img className="twitter"src={twitter} alt="instagram"/>
         </a>
         <Delete className="delete" creg={creg} setToggleFetch={props.setToggleFetch}/>
     

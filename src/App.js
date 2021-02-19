@@ -7,6 +7,7 @@ import Bio from "./components/Bio";
 import Footer from "./components/Footer"
 import "./bio.css"
 import "./Footer.css"
+import "./Form.css"
 import './nav.css';
 import "./home.css";
 import "./App.css";

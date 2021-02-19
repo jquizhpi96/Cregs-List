@@ -1,0 +1,44 @@
+.form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  background-color: #92dce5;
+  padding: 20px;
+  width: 500px;
+  border-style: dashed;
+  border-color: #7c7c7c;
+  font-size: 18px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+label {
+  color: #d64933;
+}
+
+button {
+  margin-top: 10px;
+  font-size: large;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Major Mono Display", monospace;
+}
+
+input {
+  height: 40px;
+  font-family: "Major Mono Display", monospace;
+  font-size: 14px;
+  color: #2b303a;
+}
+
+label {
+  font-style: oblique;
+  font-weight: bold;
+  width: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+textarea {
+  max-width: 493px;
+}

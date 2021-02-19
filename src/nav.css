@@ -12,9 +12,14 @@
   display: flex;
 }
 
-.Link {
+.Link,
+.Linkform {
   text-decoration: none;
   font-size: 20px;
   justify-content: space-between;
   color: #d64933;
+}
+
+.Link {
+  margin-right: -450px;
 }
