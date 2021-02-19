@@ -37,7 +37,7 @@
 
 .social {
   grid-area: F;
-  margin-left: 50px;
+  /* margin-left: 50px; */
   align-items: baseline;
 }
 

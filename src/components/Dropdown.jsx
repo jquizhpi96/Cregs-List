@@ -8,7 +8,12 @@ function Dropdown(props) {
   return 
   <div>
     <ul onclick={handleClick}
-    className= {click ? `dropdown-name clicked` : `dropdown-name`}>
+      className={click ? `dropdown-name clicked` : `dropdown-name`}>
+      {cregs.map((creg) => (
+        <Link key={creg.id} to={`/bio/${creg.id}`}>
+           <h3 className= "name"> {creg.fields.name}</h3>
+        </Link>
+          ))}
 
     </ul>
   </div>
