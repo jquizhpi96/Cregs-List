@@ -1,10 +1,19 @@
 .header {
   color: #d64933;
   margin: 0;
-  font-size: 34px;
+  font-size: 40px;
+  padding-top: 25px;
+}
+
+Span {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: lighter;
+  margin-left: -10px;
 }
 .Nav {
   margin-bottom: 10px;
+
   display: inline-block;
   background-color: #2b303a;
   justify-content: space-between;

@@ -1,24 +1,29 @@
-import { Link } from 'react-router-dom'
-import Search from './Search'
+import { Link, Route } from 'react-router-dom'
+import About from "./About"
+
 
 
 function Nav(props) {
   
   return (
+    <div>
     <nav className="Nav">
-     
-      <h2 className="header">Cregs-List</h2>
-     
+        <h1 className="header">Cregs-List </h1>
+        
+     <ul>
+          <Link className="Link" to="/">Home</Link>
+          <Link className="Link" to="/about">About</Link>
+         
+         
       
-      <ul>
-      <Link className="Link"  to="/">Home</Link>
-      
-   
-        <Link className="Linkform" to="/new">
+          <Link className="Linkform" to="/new">
           <button className="buttonform">Insert a Creg here!</button>
         </Link>
-      </ul>
-    </nav>
+        </ul>
+        
+      </nav>
+     
+      </div>
   )
 }
 

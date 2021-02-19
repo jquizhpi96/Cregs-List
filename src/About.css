@@ -1,0 +1,11 @@
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-content: center; */
+  display: flex;
+  margin: auto;
+  width: 500px;
+  height: 600px;
+  color: #2b303a;
+}
