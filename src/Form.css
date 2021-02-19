@@ -30,7 +30,7 @@ button:hover {
   color: #92dce5;
 }
 
-input {
+.formInput {
   height: 40px;
   font-family: "Major Mono Display", monospace;
   font-size: 14px;

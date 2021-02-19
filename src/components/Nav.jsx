@@ -3,7 +3,7 @@ import About from "./About"
 
 
 
-function Nav(props) {
+function Nav() {
   
   return (
     <div>

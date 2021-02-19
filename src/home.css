@@ -1,13 +1,20 @@
-input {
+.SearchInput {
   justify-content: center;
-  color: #92dce5;
+  background-color: #fff5f3;
+  margin-left: 30px;
+  color: #2b303a;
+  font-family: "Major Mono Display", monospace;
+  font-weight: bold;
+  border-style: dashed;
+  border-color: #d64933;
+  height: 40px;
 }
 
 .image {
   width: 250px;
   padding: 5px;
   border-style: dashed;
-  border-color: #7c7c7c;
+  border-color: #d64933;
   margin-top: 10px;
   transition: all 0.3s ease 0;
 }

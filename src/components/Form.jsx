@@ -57,7 +57,7 @@ function Form(props) {
   return (
     <form className="form" onSubmit={handleSubmit}>
       <label>Name:</label>
-      <input
+      <input className="formInput"
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
@@ -65,10 +65,11 @@ function Form(props) {
       />
       <br/>
       <label>Age:</label>
-      <input type="text" value={age} onChange={(e) => setAge(e.target.value)} required />
+      <input className="formInput" type="text" value={age} onChange={(e) => setAge(e.target.value)} required />
       <br/>
       <label>Location:</label>
       <input
+        className="formInput"
         type="text"
         value={location}
         onChange={(e) => setLocation(e.target.value)}
@@ -84,6 +85,7 @@ function Form(props) {
        <br/>
       <label> Instagram:</label>
       <input
+        className="formInput"
         type="text"
         value={socialMediaHandle}
         onChange={(e) => setSocialMediaHandle(e.target.value)}
@@ -91,6 +93,7 @@ function Form(props) {
        <br/>
       <label> Facebook:</label>
       <input
+        className="formInput"
         type="text"
         value={facebook}
         onChange={(e) => setFacebook(e.target.value)}
@@ -98,6 +101,7 @@ function Form(props) {
        <br/>
       <label> Twitter:</label>
       <input
+        className="formInput"
         type="text"
         value={twitter}
         onChange={(e) => setTwitter(e.target.value)}
@@ -105,6 +109,7 @@ function Form(props) {
        <br/>
       <label> Image URL:</label>
       <input
+        className="formInput"
         type="text"
         value={imageURL}
         onChange={(e) => setImageURL(e.target.value)}

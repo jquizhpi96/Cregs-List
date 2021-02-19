@@ -30,7 +30,7 @@ function Home(props) {
   return (
  
     <div>
-      <input className="Search"
+      <input className="SearchInput"
         type="text"
         placeholder="Search for the Creg..."
         value={name}
