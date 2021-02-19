@@ -17,7 +17,7 @@ function Form(props) {
   const params = useParams();
 
   useEffect(() => {
-    if (props.cregs.length > 0 && params.id) {
+    if (props.creg.length > 0 && params.id) {
       const findCreg = props.cregs.find((creg) => params.id === creg.id);
 
       if (findCreg) {
@@ -31,7 +31,7 @@ function Form(props) {
         setImageURL(findCreg.fields.imageURL);
       }
     }
-  }, [props.cregs, params.id]);
+  }, [props.creg, params.id]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

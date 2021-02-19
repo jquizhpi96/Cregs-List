@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 
 function Home(props) {
   const [cregs, setCregs] = useState([]);
+  const [name, setName] = useState("");
+  const[ allTheCregs, setAllTheCregs] = useState([])
   const [toggleFetch, setToggleFetch] = useState(false);
 
   useEffect(() => {
@@ -13,13 +15,30 @@ function Home(props) {
       const resp = await axios.get(baseURL, config);
       console.log(resp.data.records);
       setCregs(resp.data.records);
+     
+      if (resp.data.records) {
+        setAllTheCregs(resp.data.records.filter((creg) => {
+          return creg.fields?.name?.toLowerCase().includes(name.toLowerCase())
+        }
+  ));
+  
+      }
     };
     getCregs();
-  }, [toggleFetch]);
+  }, [name, toggleFetch]);
 
   return (
-    <div className="Container">
-      {cregs.map((creg) => (
+ 
+    <div className="Search">
+    <input
+        type="text"
+        placeholder="Search for the Creg..."
+        value={name}
+         onChange={(e) => setName(e.target.value)}
+        />
+   
+     <div className="Container">
+      {allTheCregs.map((creg) => (
         <Link key={creg.id} to={`/bio/${creg.id}`}>
           
           <img className= "image"src={creg.fields.imageURL} />
@@ -27,6 +46,7 @@ function Home(props) {
         </Link>
          
       ))}
+        </div>
      
     </div>
   );

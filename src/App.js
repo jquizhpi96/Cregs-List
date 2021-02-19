@@ -5,6 +5,7 @@ import Form from "./components/Form";
 import Nav from "./components/Nav";
 import Bio from "./components/Bio";
 import Footer from "./components/Footer"
+
 import "./bio.css"
 import "./Footer.css"
 import "./Form.css"
@@ -13,22 +14,23 @@ import "./home.css";
 import "./App.css";
 
 function App() {
-  const [cregs, setCregs] = useState([]);
+  const [creg, setCreg] = useState([]);
   const [toggleFetch, setToggleFetch] = useState(false);
 
   return (
     <div className="App">
-      <Nav />
+      <Nav creg={creg} />
+
       <Route path="/new">
-        <Form cregs={cregs} setToggleFetch={setToggleFetch} />
+        <Form creg={creg} setToggleFetch={setToggleFetch} />
       </Route>
       <Route exact path="/">
         <div className="cregs-container">
-          <Home creg={cregs} />
+          <Home creg={creg} />
         </div>
       </Route>
       <Route path="/bio/:id">
-        <Bio creg={cregs} setToggleFetch={setToggleFetch} />
+        <Bio creg={creg} setToggleFetch={setToggleFetch} />
       </Route>
       <Footer className="Footer" />
     </div>

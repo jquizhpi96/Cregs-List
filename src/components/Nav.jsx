@@ -1,5 +1,8 @@
-import {Link} from 'react-router-dom'
-function Nav() {
+import { Link } from 'react-router-dom'
+import Search from './Search'
+
+
+function Nav(props) {
   
   return (
     <nav className="Nav">
@@ -10,12 +13,11 @@ function Nav() {
       <ul>
       <Link className="Link"  to="/">Home</Link>
       
-        
+   
         <Link className="Linkform" to="/new">
           <button className="buttonform">Insert a Creg here!</button>
         </Link>
       </ul>
-      {/* <h3>A Home for the Cregs, Kraigs, and however you spell Creg. </h3> */}
     </nav>
   )
 }
