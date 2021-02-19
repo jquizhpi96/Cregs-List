@@ -8,7 +8,7 @@ function Nav() {
   return (
     <div>
     <nav className="Nav">
-        <h1 className="header">Cregs-List </h1>
+        <h1 className="header">Cregs-List 😛 </h1>
         
      <ul>
           <Link className="Link" to="/">Home</Link>
