@@ -8,6 +8,7 @@
   border-style: dashed;
   border-color: #d64933;
   height: 40px;
+  transition: all ease-in-out 250ms;
 }
 
 .image {
@@ -16,10 +17,11 @@
   border-style: dashed;
   border-color: #d64933;
   margin-top: 10px;
-  transition: all 0.3s ease 0;
+  transition: all ease-in-out 250ms;
 }
 
-.image:hover {
+.image:hover,
+.SearchInput:hover {
   border-color: #92dce5;
 }
 

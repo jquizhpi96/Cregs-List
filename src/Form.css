@@ -22,7 +22,7 @@ button {
   font-weight: bold;
   cursor: pointer;
   font-family: "Major Mono Display", monospace;
-  transition: all 0.3s ease 0;
+  transition: all ease-in-out 250ms;
   border-radius: 50px;
   border: none;
 }
