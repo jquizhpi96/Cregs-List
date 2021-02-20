@@ -85,15 +85,16 @@ button {
   }
   .location {
     grid-area: R;
-    margin-top: 50px;
+
     text-align: center;
   }
 
   .bio {
     grid-area: R;
-    margin-top: 100px;
-    margin-left: 50px;
+
+    margin-left: 0px;
   }
+
   .delete {
     grid-area: F;
     margin-top: 100px;
@@ -102,7 +103,7 @@ button {
 
   .social {
     grid-area: F;
-    margin-left: 5px;
+    margin-left: 15px;
   }
 
   .img {
@@ -111,7 +112,7 @@ button {
     grid-area: L;
 
     display: flex;
-    flex-wrap: wrap;
+
     align-content: center;
   }
 }
