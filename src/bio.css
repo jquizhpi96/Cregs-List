@@ -51,6 +51,9 @@
   width: 400px;
   grid-area: L;
   margin-top: 10px;
+  border-style: dashed;
+  padding: 10px;
+  border-color: #d64933;
 }
 
 button {
