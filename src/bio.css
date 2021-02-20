@@ -99,11 +99,13 @@ button {
     grid-area: F;
     margin-top: 100px;
     margin-left: 50px;
+    justify-self: center;
   }
 
   .social {
     grid-area: F;
     margin-left: 15px;
+    /* justify-self: center; */
   }
 
   .img {
@@ -111,8 +113,6 @@ button {
     margin: 0, auto;
     grid-area: L;
 
-    display: flex;
-
-    align-content: center;
+    justify-self: center;
   }
 }
