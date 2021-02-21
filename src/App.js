@@ -4,20 +4,16 @@ import Home from "./components/Home";
 import Form from "./components/Form";
 import Navbar from "./components/Nav/Navbar";
 import Bio from "./components/Bio";
-import Footer from "./components/Footer"
-import About from "./components/About"
-import SideNav from "./components/Nav/SideNav";
-import "./bio.css"
-import "./Footer.css"
-import "./Form.css"
-import './nav.css';
+import Footer from "./components/Footer";
+import About from "./components/About";
+
+import "./bio.css";
+import "./Footer.css";
+import "./Form.css";
+import "./nav.css";
 import "./home.css";
 import "./About.css";
 import "./App.css";
-import "./components/Nav/SideNav.css";
-
-
-
 
 function App() {
   const [creg, setCreg] = useState([]);
@@ -25,9 +21,7 @@ function App() {
 
   return (
     <div className="App">
-
       <Navbar creg={creg} />
-
 
       <Route path="/about" component={About} />
       <Route path="/new">

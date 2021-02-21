@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {useState } from 'react'
+
 
 import SideNav from "./SideNav";
 
@@ -14,11 +14,11 @@ display: flex;
 z-index: 999;
 display: none;
 
-@media (max-width: 750px){
+@media (max-width: 711px){
   display: flex;
   justify-content: space-around;
 flex-flow: column nowrap;
-z-index: 999;
+z-index: 20;
 }
 
 div{
@@ -28,6 +28,7 @@ div{
   border-radius: 10px;
   transform-origin: 1px;
   transition: all 0.3s linear;
+  z-index: 20;
 
   &:nth-child(1){
     transform: ${ ({ open }) => open ? `rotate(45deg)` : `rotate(0)`};
@@ -51,11 +52,13 @@ const Burger = ({burgerToggle, open}) => {
   return (
     <>
       <StyleBurger open={open} onClick={burgerToggle}>
+       
         <div></div>
         <div></div>
         <div></div>
         <SideNav open={open} />
       </StyleBurger>
+      
       
      </>
   )

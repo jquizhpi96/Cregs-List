@@ -3,14 +3,16 @@ import {useState } from 'react'
 
 import styled from "styled-components";
 import Burger from './Burger'
-import SideNav from './SideNav';
+
+import NavElements from './NavElements';
+
 
 const Nav = styled.nav`
 width: 100%;
 height: 65px;
 padding: 0 , 20px;
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 
 .header {
   color: #d64933; 
@@ -31,8 +33,8 @@ function Navbar() {
   <Nav>
       <div className="header">Cregs-List 😛</div>
       <Burger open={open}
-        burgerToggle={burgerToggle}/>
-      <SideNav burgerToggle={burgerToggle}/>
+        burgerToggle={burgerToggle} />
+     <NavElements open={open}/>
     </Nav>
       
 

@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 
 
-const Side = styled.nav`
+const NavElements = styled.nav`
 .nav-links{
 display: flex;
 list-style: none;
@@ -32,33 +32,19 @@ align-items: center;
 .buttonform{
   margin-top: 0;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 711px) {
   
-  .nav-links {
-    position: fixed;
-    background-color: teal;
-    height: 100vh;
-    align-self: center;
-    margin-top: 0;
-    padding-left: 0;
+display: none;
    
-    top: 0;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    z-index: 1;
-    transform: ${ ({ open }) => open ? `translateX(0%)` : `translateX(100%)`};
-    transition: 0.3s ease-in-out;
-  }
 
 }`
 
 
-function SideNav({open, burgerToggle}) {
+function navElements({open, burgerToggle}) {
  
  
   return (
-    <Side open={open} burgerToggle={burgerToggle} >
+    <NavElements open={open} burgerToggle={burgerToggle} >
    <ul  className= "nav-links" >
      <Link className="Link" to="/">Home</Link>
      <Link className="Link" to="/about">About</Link>
@@ -66,9 +52,9 @@ function SideNav({open, burgerToggle}) {
        <button className="buttonform">Insert a Creg here!</button>
      </Link>
       </ul>
-      </Side>
+      </NavElements>
       
   )
 }
 
-export default SideNav;
+export default navElements;
