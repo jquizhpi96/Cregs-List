@@ -1,7 +1,8 @@
 .App {
   /* background-color: #eee5e9; */
   background-image: linear-gradient(#eee5e9, #ff8a8a);
-  font-family: "Major Mono Display", monospace;
+  /* font-family: "Major Mono Display", monospace; */
+  font-family: sans-serif;
 }
 
 .cregs-container {

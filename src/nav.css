@@ -1,58 +1,111 @@
-.header {
-  color: #d64933;
-  grid-column: 1;
-  font-size: 3rem;
-  margin-left: 20px;
+/* .header {
+  color: #d64933; */
+/* grid-column: 1; */
+/* font-size: 3rem;  */
+/* margin-left: 20px;
   margin-top: 20px;
-  margin-bottom: 20px;
-}
-.buttonform {
+  margin-bottom: 20px; */
+/* }
+/* .buttonform {
   font-size: 18px;
   transition: all ease-in-out 250ms;
-}
+  margin: 0;
+} */
 
-.Nav {
-  margin-bottom: 10px;
-
-  display: inline-block;
+/* .Nav {
   background-color: #2b303a;
   justify-content: space-between;
 
-  padding: 0 20px;
+  padding: 10px 20px;
   display: flex;
-}
+} */
+/* .navlinks {
+  display: flex;
+  list-style: none;
 
-.Link,
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+} */
+.Nav {
+  align-content: flex-end;
+  position: relative;
+}
+/* .Link,
 .Linkform {
   text-decoration: none;
   font-size: 20px;
   padding: 0 20px;
   color: #d64933;
   transition: all ease-in-out 250ms;
-}
-
+} */
+/* 
 .Link:hover,
 .Linkform :hover,
 .buttonform:hover {
   color: #92dce5;
+} */
+
+/* @media screen and (max-width: 600px) { */
+.Nav {
+  /* grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr; */
+  /* margin-right: 0; */
 }
-
-@media screen and (min-width: 310px) and (max-width: 1140px) {
-  .Nav {
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    margin-right: 0;
-  }
-
+/* 
   ul {
     grid-row: 2;
     grid-column: 1;
     padding-left: 10px;
+  } */
+
+/* .navlinks {
+    position: fixed;
+    background-color: teal;
+    height: 100vh;
+    width: 100%;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    z-index: 9999;
+    clip-path: circle(100px at 100% -20%);
+    -webkit-clip-path: circle(100px at 100% -20%);
+    transition: all 1s ease-out;
   }
 
-  .Link,
-  .buttonform {
-    font-size: 1rem;
-    padding-right: 10px;
+  .navlinks.open {
+    clip-path: circle(1000px at 100% -20%);
+    -webkit-clip-path: circle(1000px at 100% -20%);
   }
-}
+  .line {
+    width: 35px;
+    height: 5px;
+    background: crimson;
+    margin: 5px;
+  }
+  .hamburger {
+    cursor: pointer;
+    margin: auto;
+    margin-right: 0;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+} */
+
+/* @media screen and (max-width: 600px) {
+  .navlinks {
+    position: fixed;
+    background-color: teal;
+    height: 100vh;
+    width: 100%;
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    z-index: 1;
+    transform: ${ ({ open }) => open ? `rotate(-45deg)` : `rotate(0)`};
+  }
+} */

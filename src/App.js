@@ -2,10 +2,11 @@ import { Route } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Home from "./components/Home";
 import Form from "./components/Form";
-import Nav from "./components/Nav";
+import Navbar from "./components/Nav/Navbar";
 import Bio from "./components/Bio";
 import Footer from "./components/Footer"
 import About from "./components/About"
+import SideNav from "./components/Nav/SideNav";
 import "./bio.css"
 import "./Footer.css"
 import "./Form.css"
@@ -13,6 +14,9 @@ import './nav.css';
 import "./home.css";
 import "./About.css";
 import "./App.css";
+import "./components/Nav/SideNav.css";
+
+
 
 
 function App() {
@@ -22,7 +26,9 @@ function App() {
   return (
     <div className="App">
 
-      <Nav creg={creg} />
+      <Navbar creg={creg} />
+
+
       <Route path="/about" component={About} />
       <Route path="/new">
         <Form creg={creg} setToggleFetch={setToggleFetch} />

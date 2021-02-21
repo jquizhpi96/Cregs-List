@@ -5,9 +5,9 @@
   margin-bottom: 40px;
   display: grid;
   grid-template-areas:
-    "L H H H H H"
-    "L A A R R R"
-    "L A A F F F";
+    "L H H H H "
+    "L A A R R "
+    "L A A F F ";
   color: #7c7c7c;
 }
 
@@ -47,7 +47,7 @@
   height: 40px;
 }
 .img {
-  max-width: 400px;
+  max-width: 300px;
   grid-area: L;
   margin-top: 10px;
   border-style: dashed;
@@ -92,20 +92,25 @@ button {
   .bio {
     grid-area: R;
 
-    margin-left: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   .delete {
     grid-area: F;
-    margin-top: 100px;
-    margin-left: 50px;
+    margin-left: 0;
     justify-self: center;
+    margin-bottom: 5px;
   }
 
   .social {
     grid-area: F;
-    margin-left: 15px;
-    /* justify-self: center; */
+    justify-self: center;
+    margin-left: 0px;
+    padding: 0;
+    align-content: space-between;
+    margin-bottom: 0;
+    justify-content: space-around;
   }
 
   .img {
