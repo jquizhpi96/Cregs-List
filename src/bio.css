@@ -35,7 +35,7 @@
   margin-left: 50px;
 }
 
-.social {
+.socialmedia {
   grid-area: F;
   margin-left: 5px;
 }
@@ -103,7 +103,7 @@ button {
     margin-bottom: 5px;
   }
 
-  .social {
+  .socialmedia {
     grid-area: F;
     justify-self: center;
     margin-left: 0px;

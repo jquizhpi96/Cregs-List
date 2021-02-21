@@ -36,7 +36,7 @@ useEffect(() => {
       <h4 className="age">Age: {creg.fields.age}</h4>
       <h4 className="location">Location: {creg.fields.location}</h4>
       <h3 className="bio">{creg.fields.bio}</h3>
-      <ul className= "social">
+      <ul className= "socialmedia">
       <a className="social"href={creg.fields.socialMediaHandle}>
         <img className="insta"src={instagram} alt="instagram"/>
       </a>
