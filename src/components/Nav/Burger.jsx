@@ -11,14 +11,14 @@ top: 15px;
 right: 20px;
 display: flex;
 
-z-index: 25;
+z-index: 999;
 display: none;
 
 @media (max-width: 750px){
   display: flex;
   justify-content: space-around;
 flex-flow: column nowrap;
-z-index: 25;
+z-index: 999;
 }
 
 div{
@@ -48,10 +48,6 @@ div{
 
 const Burger = ({burgerToggle, open}) => {
 
-
-  
-  
- 
   return (
     <>
       <StyleBurger open={open} onClick={burgerToggle}>
