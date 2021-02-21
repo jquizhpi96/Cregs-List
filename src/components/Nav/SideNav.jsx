@@ -38,8 +38,9 @@ align-items: center;
     position: fixed;
     background-color: teal;
     height: 100vh;
-    
+    align-self: center;
     margin-top: 0;
+    padding-left: 0;
    
     top: 0;
     left: 0;
