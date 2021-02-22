@@ -20,19 +20,23 @@ padding-bottom: 20px;
 
 .header {
   color:#F9DBBD; 
-  font-size: 3rem;
+  font-family: 'Lobster', cursive;
+  font-size: 50px;
   padding-left: 20px;
-  font-weight: bold;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-@keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
+  // font-weight: bold;
+ 
+  //  -animation: glow 1s ease-in-out 
   
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
+}
+.header:hover{
+  
+  
+    text-shadow: 0 0 10px rgb(255, 210, 253), 0 0 20px rgb(255, 210, 253),
+      0 0 30px #e600b8, 0 0 40px #e600b8, 0 0 50px #e600b8, 0 0 60px #e600b8,
+      0 0 70px #e600b8;
+    
+
+}
 
 }
 `
