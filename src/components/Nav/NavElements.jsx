@@ -22,7 +22,7 @@ margin-right: 15px;
 .Link,
 .Linkform{
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
   padding: 10px 10px;
     color: #2ec4b6;
   transition: all ease-in-out 250ms;
@@ -31,10 +31,13 @@ margin-right: 15px;
 
 .buttonform{
   margin-top: 0;
+  font-size: 15px;
+  font-weight:bold;
 }
 .buttonform:hover {
   color: #2ec4b6;
 }
+
 @media screen and (max-width: 711px) {
   
 display: none;
