@@ -13,10 +13,10 @@ height: 65px;
 padding: 0 , 20px;
 display: flex;
 justify-content: space-between;
-//  background-color: #424B54;
+ background-color: #1e0e5e;
 
-padding-top: 10px;
-padding-bottom: 10px;
+padding-top: 20px;
+padding-bottom: 20px;
 
 .header {
   color:#F9DBBD; 
