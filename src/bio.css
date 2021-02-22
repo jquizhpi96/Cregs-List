@@ -37,7 +37,6 @@
 
 .socialmedia {
   grid-area: F;
-  margin-left: 5px;
 }
 
 .insta,
@@ -45,6 +44,7 @@
 .twitter {
   width: 40px;
   height: 40px;
+  margin-left: 10px;
 }
 .img {
   max-width: 400px;

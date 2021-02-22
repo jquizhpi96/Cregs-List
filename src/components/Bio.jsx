@@ -6,10 +6,12 @@ import axios from 'axios'
 import instagram from '../Untitled-1.jpeg'
 import facebook from '../facebook.png'
 import twitter from '../twitter.png'
+import Modal from "./Modal";
 
 function Bio(props) {
   const [creg, setCreg] = useState("");
   const params = useParams()
+  const [isOpen,setIsOpen] = useState(false);
   
 useEffect(() => {
     const getCregs = async () => {
@@ -46,11 +48,14 @@ useEffect(() => {
       <a className="social"href={creg.fields.twitter}>
         <img className="twitter"src={twitter} alt="instagram"/>
         </a>
-        </ul>
-        <Delete className="delete" creg={creg} setToggleFetch={props.setToggleFetch}/>
-    
+      </ul>
       
-     
+      {/* <button className='delete' onClick={()=> setIsOpen(true)}>Open Modal</button> */}
+        <Delete className="delete" creg={creg} setToggleFetch={props.setToggleFetch}/>
+      {/* <Modal  creg={creg} setToggleFetch={props.setToggleFetch}
+        isOpen={isOpen}
+        onClose={ ()=> setIsOpen(false)}/> */}
+      
       
     </div>
   

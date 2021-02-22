@@ -47,9 +47,9 @@ function Form(props) {
     };
     console.log(fields);
     
-    if (params.id) {
-      await axios.post(baseURL, { fields }, config);
-    }
+    
+    await axios.post(baseURL, { fields }, config);
+    
     props.setToggleFetch((curr) => !curr);
     history.push("/");
   };

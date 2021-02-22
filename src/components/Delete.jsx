@@ -17,8 +17,9 @@ function Delete(props) {
   return (
     
     <div className='delete'>
-      
-        <button onClick={deleteProfile}>Delete this Creg</button>
+          
+      <button onClick={deleteProfile}>Delete this Creg</button>
+      {/* <h3> Are you sure?</h3> */}
      
       
     </div>
