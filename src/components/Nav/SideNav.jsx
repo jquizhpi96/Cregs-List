@@ -15,22 +15,21 @@ justify-content: space-around;
 align-items: center;
 
 }
+.Link:hover,
+.Linkform:hover {
+ color:white;
+}
 
 .Link,
 .Linkform {
   text-decoration: none;
   font-size: 20px;
   padding: 10px 10px;
-  color:#c81d25;
+  color:#2ec4b6;
   transition: all ease-in-out 250ms;
 }
 
-.Link:hover,
-.Linkform:hover,
-{
-  color: #black;
- 
-}
+
 .buttonform{
   margin-top: 0;
 }
@@ -38,7 +37,7 @@ align-items: center;
   
   .nav-links {
     position: fixed;
-    background-color: #ff757c;
+    background-color: #180b4d;
     height: 100vh;
     align-self: center;
     margin-top: 0;
