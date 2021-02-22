@@ -10,7 +10,8 @@
   font-size: 18px;
   border-radius: 20px;
   border-style: none;
-
+  border-style: double;
+  border-color: #b133ff;
   height: 40px;
   margin: 0 auto;
   padding: 10px 10px;

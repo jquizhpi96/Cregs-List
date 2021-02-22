@@ -1,11 +1,10 @@
-import { Link } from 'react-router-dom'
-import {useState } from 'react'
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 import styled from "styled-components";
-import Burger from './Burger'
+import Burger from "./Burger";
 
-import NavElements from './NavElements';
-
+import NavElements from "./NavElements";
 
 const Nav = styled.nav`
 width: 100%;
@@ -25,42 +24,31 @@ padding-bottom: 20px;
   padding-left: 20px;
   // font-weight: bold;
  
-  //  -animation: glow 1s ease-in-out 
+
   
 }
 .header:hover{
-  
-  
-    text-shadow: 0 0 10px rgb(255, 210, 253), 0 0 20px rgb(255, 210, 253),
+  text-shadow: 0 0 10px rgb(255, 210, 253), 0 0 20px rgb(255, 210, 253),
       0 0 30px #e600b8, 0 0 40px #e600b8, 0 0 50px #e600b8, 0 0 60px #e600b8,
       0 0 70px #e600b8;
-    
+  }
 
 }
-
-}
-`
+`;
 
 function Navbar() {
-  
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
   const burgerToggle = () => {
-    setOpen(!open)
-}
- 
-  return (
-  <Nav>
-      <div className="header">Cregs-List </div>
-      <Burger open={open}
-        burgerToggle={burgerToggle} />
-     <NavElements open={open}/>
-    </Nav>
-      
+    setOpen(!open);
+  };
 
-        
-      
-     
-  )
+  return (
+    <Nav>
+      <div className="header">Cregs-List </div>
+      <Burger open={open} burgerToggle={burgerToggle} />
+      <NavElements open={open} />
+    </Nav>
+  );
 }
 
 export default Navbar;
