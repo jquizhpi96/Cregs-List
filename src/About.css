@@ -3,19 +3,42 @@
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
-
+  font-weight: bold;
   display: flex;
   margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 220px;
+  margin-right: 220px;
   margin-bottom: 20px;
 
   height: max-content;
-  color: #2b303a;
+  color: white;
+}
+.profile {
+  margin: 0, auto;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  align-self: center;
 }
 
 .heading {
   margin-top: 50px;
-  margin-bottom: 50px;
+  color: #2ec4b6;
   align-self: center;
+}
+@media screen and (max-width: 800px) {
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    height: max-content;
+  }
 }

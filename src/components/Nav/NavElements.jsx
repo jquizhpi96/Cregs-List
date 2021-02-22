@@ -8,29 +8,32 @@ const NavElements = styled.nav`
 .nav-links{
 display: flex;
 list-style: none;
+margin: 0px;
 
-justify-content: space-around;
 align-items: center;
+margin-right: 15px;
 
+}
+.Link:hover,
+.Linkform:hover {
+ color:white;
 }
 
 .Link,
-.Linkform {
+.Linkform{
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   padding: 10px 10px;
-    color: #d64933;
+    color: #2ec4b6;
   transition: all ease-in-out 250ms;
 }
 
-.Link:hover,
-.Linkform :hover,
-.buttonform:hover {
-  color: #92dce5;
- 
-}
+
 .buttonform{
   margin-top: 0;
+}
+.buttonform:hover {
+  color: #2ec4b6;
 }
 @media screen and (max-width: 711px) {
   

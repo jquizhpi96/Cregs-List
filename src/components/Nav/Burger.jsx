@@ -24,7 +24,7 @@ z-index: 20;
 div{
   width: 2rem;
   height: 0.25rem;
-  background-color: ${ ({ open }) => open ? `black` : `crimson`};
+  background-color: ${ ({ open }) => open ? `crimson` : `#2ec4b6`};
   border-radius: 10px;
   transform-origin: 1px;
   transition: all 0.3s linear;

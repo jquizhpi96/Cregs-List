@@ -13,10 +13,16 @@ height: 65px;
 padding: 0 , 20px;
 display: flex;
 justify-content: space-between;
+//  background-color: #424B54;
+
+padding-top: 10px;
+padding-bottom: 10px;
 
 .header {
-  color: #d64933; 
+  color:#F9DBBD; 
   font-size: 3rem;
+  padding-left: 20px;
+  font-weight: bold;
 }
 
 }
@@ -31,7 +37,7 @@ function Navbar() {
  
   return (
   <Nav>
-      <div className="header">Cregs-List 😛</div>
+      <div className="header">Cregs-List </div>
       <Burger open={open}
         burgerToggle={burgerToggle} />
      <NavElements open={open}/>

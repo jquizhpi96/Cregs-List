@@ -5,10 +5,12 @@ import styled from "styled-components";
 
 
 const Side = styled.nav`
+
+margin: 0px;
 .nav-links{
 display: flex;
 list-style: none;
-
+font-weight: bold;
 justify-content: space-around;
 align-items: center;
 
@@ -19,14 +21,14 @@ align-items: center;
   text-decoration: none;
   font-size: 20px;
   padding: 10px 10px;
-    color: #d64933;
+  color:#c81d25;
   transition: all ease-in-out 250ms;
 }
 
 .Link:hover,
-.Linkform :hover,
-.buttonform:hover {
-  color: #92dce5;
+.Linkform:hover,
+{
+  color: #black;
  
 }
 .buttonform{
@@ -36,11 +38,12 @@ align-items: center;
   
   .nav-links {
     position: fixed;
-    background-color: teal;
+    background-color: #ff757c;
     height: 100vh;
     align-self: center;
     margin-top: 0;
     padding-left: 0;
+  
    
     top: 0;
     left: 0;

@@ -8,7 +8,7 @@
     "L H H H H "
     "L A A R R "
     "L A A F F ";
-  color: #7c7c7c;
+  color: white;
 }
 
 .name {
@@ -50,18 +50,23 @@
   max-width: 300px;
   grid-area: L;
   margin-top: 10px;
-  border-style: dashed;
+  border-style: double;
   padding: 10px;
-  border-color: #d64933;
+  border-color: #2ec4b6;
 }
 
 button {
-  color: #2b303a;
-  background-color: #d64933;
+  color: #a0067c;
+  background-color: #2ec4b6;
   font-size: 14px;
 
   padding: 10px;
   border-radius: 5%;
+}
+
+button:hover {
+  background-color: #460044;
+  color: #2ec4b6;
 }
 
 @media screen and (max-width: 700px) {
@@ -74,7 +79,6 @@ button {
       "L L L L"
       "R R R R"
       "F F F F";
-    color: #7c7c7c;
   }
   .name {
     grid-area: H;

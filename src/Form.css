@@ -2,18 +2,17 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  background-color: #92dce5;
+  background-color: #1e0e5e;
   padding: 20px;
   width: 500px;
-  border-style: dashed;
-  border-color: #7c7c7c;
+  border-radius: 40px;
   font-size: 18px;
   margin: 0 auto;
   margin-bottom: 5px;
 }
 
 label {
-  color: #d64933;
+  color: #2ec4b6;
 }
 
 button {
@@ -27,14 +26,14 @@ button {
   border: none;
 }
 button:hover {
-  color: #92dce5;
+  color: #2ec4b6;
 }
 
 .formInput {
   height: 40px;
   font-family: "Major Mono Display", monospace;
   font-size: 14px;
-  color: #2b303a;
+  color: #6c00b0;
 }
 
 label {
@@ -47,6 +46,7 @@ label {
 
 textarea {
   max-width: 493px;
+  color: #6c00b0;
 }
 
 @media screen and (min-width: 310px) and (max-width: 560px) {
