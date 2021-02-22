@@ -30,6 +30,8 @@ button {
 }
 button:hover {
   color: #2ec4b6;
+  box-shadow: 0 0 10px rgb(255, 210, 253), 0 0 20px rgb(255, 210, 253),
+    0 0 30px #e600b8, 0 0 40px #e600b8, 0 0 50px #e600b8;
 }
 
 .formInput {
