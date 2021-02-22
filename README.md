@@ -42,39 +42,40 @@ The wireframes displays first the homepage where the user will see a photo galle
 
 #### PostMVP
 
-- edit/delete button option for the user
-- experiment of CSS styling to create animations effects when the user hovers on the image
+- delete button option for the user
+- experiment of CSS styling to create animated effects when the user hovers on the image
 - have the social media logos displayed in the bio page with the link to their social media handle embeded.
+- create search function
 
 ## Project Schedule
 
 This schedule will be used to keep track of your progress throughout the week and align with our expectations. Here's an example.
 
-| Day         | Deliverable                                        | Status     |
-| ----------- | -------------------------------------------------- | ---------- |
-| Febraury 16 | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
-| February 16 | Project Approval                                   | Incomplete |
-| February 17 | Html, CSS, and API Data displayed on page          | Incomplete |
-| February 19 | Componenets completed                              | Incomplete |
-| February 20 | Submit Button Function, MVP completed              | Incomplete |
-| February 21 | Additional CSS Stlying                             | Incomplete |
-| February 23 | Presentations                                      | Incomplete |
+| Day         | Deliverable                                        | Status   |
+| ----------- | -------------------------------------------------- | -------- |
+| Febraury 16 | Prompt / Wireframes / Priority Matrix / Timeframes | Complete |
+| February 16 | Project Approval                                   | Complete |
+| February 17 | Html, CSS, and API Data displayed on page          | Complete |
+| February 19 | Componenets completed                              | Complete |
+| February 20 | Submit Button Function, MVP completed              | Complete |
+| February 21 | Additional CSS Stlying                             | Complete |
+| February 23 | Presentations                                      | Complete |
 
 ## Timeframes
 
 | Component                              | Priority | Estimated Time | Time Invested | Actual Time |
 | -------------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| HTML / CSS                             |    H     |      2hrs      |      hrs      |     hrs     |
-| Working with API                       |    H     |      3hrs      |      hrs      |     hrs     |
-| Adding components                      |    H     |     3 hrs      |      hrs      |     hrs     |
-| Linking the components to the man page |    H     |     2 hrs      |      hrs      |     hrs     |
-| Adding Form Submit                     |    H     |      2hrs      |      hrs      |     hrs     |
-| Nav bar displayed                      |    H     |      2hrs      |      hrs      |     hrs     |
-| Cickable profile images                |    H     |     3 hrs      |      hrs      |     hrs     |
-| Data creation and deletion toggleFetch |    H     |     3 hrs      |      hrs      |     hrs     |
-| CSS flexbox                            |    H     |     3 hrs      |      hrs      |     hrs     |
-| CSS advanced styling                   |    H     |     4 hrs      |      hrs      |     hrs     |
-| Total                                  |    H     |     27 hrs     |      hrs      |     hrs     |
+| HTML / CSS                             |    H     |      2hrs      |     1hrs      |    1hrs     |
+| Working with API                       |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Adding components                      |    H     |     3 hrs      |     4hrs      |    4hrs     |
+| Linking the components to the man page |    H     |     2 hrs      |     4hrs      |    4hrs     |
+| Adding Form Submit                     |    H     |      2hrs      |     2hrs      |    2hrs     |
+| Nav bar displayed                      |    H     |      2hrs      |     3hrs      |    3hrs     |
+| Cickable profile images                |    H     |     3 hrs      |     2hrs      |    2hrs     |
+| Data creation and deletion toggleFetch |    H     |     3 hrs      |     2hrs      |    2hrs     |
+| CSS flexbox                            |    H     |     3 hrs      |     5hrs      |    5hrs     |
+| CSS advanced styling                   |    H     |     4 hrs      |     10hrs     |    10hrs    |
+| Total                                  |    H     |     27 hrs     |     36hrs     |    36hrs    |
 
 ## SWOT Analysis
 
