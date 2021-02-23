@@ -3,7 +3,6 @@ import { useHistory, useParams } from "react-router-dom";
 import { baseURL, config } from "../services";
 import axios from "axios";
 
-
 function Form(props) {
   const [name, setName] = useState("");
   const [age, setAge] = useState("");
@@ -46,10 +45,9 @@ function Form(props) {
       imageURL,
     };
     console.log(fields);
-    
-    
+
     await axios.post(baseURL, { fields }, config);
-    
+
     props.setToggleFetch((curr) => !curr);
     history.push("/");
   };
@@ -57,32 +55,41 @@ function Form(props) {
   return (
     <form className="form" onSubmit={handleSubmit}>
       <label>Name:</label>
-      <input className="formInput"
+      <input
+        className="formInput"
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
         required
       />
-      <br/>
+      <br />
       <label>Age:</label>
-      <input className="formInput" type="text" value={age} onChange={(e) => setAge(e.target.value)} required />
-      <br/>
+      <input
+        className="formInput"
+        type="text"
+        value={age}
+        onChange={(e) => setAge(e.target.value)}
+        required
+      />
+      <br />
       <label>Location:</label>
       <input
         className="formInput"
         type="text"
         value={location}
         onChange={(e) => setLocation(e.target.value)}
-        required />
-       <br/>
+        required
+      />
+      <br />
       <label> Tell us about yourself:</label>
       <textarea
         type="text"
         placeholder="Who this?"
         value={bio}
         onChange={(e) => setBio(e.target.value)}
-        required />
-       <br/>
+        required
+      />
+      <br />
       <label> Instagram:</label>
       <input
         className="formInput"
@@ -90,7 +97,7 @@ function Form(props) {
         value={socialMediaHandle}
         onChange={(e) => setSocialMediaHandle(e.target.value)}
       />
-       <br/>
+      <br />
       <label> Facebook:</label>
       <input
         className="formInput"
@@ -98,7 +105,7 @@ function Form(props) {
         value={facebook}
         onChange={(e) => setFacebook(e.target.value)}
       />
-       <br/>
+      <br />
       <label> Twitter:</label>
       <input
         className="formInput"
@@ -106,14 +113,15 @@ function Form(props) {
         value={twitter}
         onChange={(e) => setTwitter(e.target.value)}
       />
-       <br/>
+      <br />
       <label> Image URL:</label>
       <input
         className="formInput"
         type="text"
         value={imageURL}
         onChange={(e) => setImageURL(e.target.value)}
-        required/>
+        required
+      />
       <button type="submit">Submit Creg</button>
     </form>
   );

@@ -4,8 +4,7 @@ import { baseURL, config } from "../services";
 
 import { useEffect, useState } from "react";
 
-function Home(props) {
-  const [cregs, setCregs] = useState([]);
+function Home() {
   const [name, setName] = useState("");
   const[ allTheCregs, setAllTheCregs] = useState([])
   const [toggleFetch, setToggleFetch] = useState(false);
@@ -14,7 +13,7 @@ function Home(props) {
     const getCregs = async () => {
       const resp = await axios.get(baseURL, config);
       console.log(resp.data.records);
-      setCregs(resp.data.records);
+      
      
       if (resp.data.records) {
         setAllTheCregs(resp.data.records.filter((creg) => {
